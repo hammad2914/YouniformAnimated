@@ -1,0 +1,956 @@
+@font-face {
+    font-family: 'CustomFont'; 
+    src: url('../fonts/GTFlexa-ExtendedBold.ttf') format('truetype'); 
+    font-weight: bold;
+  }
+  
+
+@font-face {
+    font-family: 'CustomFont'; 
+    src: url('../fonts/GTFlexa-Medium.ttf') format('truetype'); 
+    font-weight:normal;
+  }  
+  
+body {
+    margin: 0%;
+    box-sizing: border-box;
+    padding: 0%;
+    font-size: 62.5%;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+.parent {
+    background-color: #f9f5ef;
+    height: 100%;
+    max-width: 1920px;
+    margin: auto;
+    overflow-x: hidden;
+}
+
+.main1 {
+    width: 100%;
+    padding: 10px 35px;
+}
+
+.navbar-nav {
+    padding: 0px 5px;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin: 0px 30px;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+.navbar-nav li{
+    position: relative;
+    margin: 0px 12px;
+}
+
+.navbar-nav li a {
+    
+    position: relative;
+    color: #000000;
+}
+
+
+.navbar-nav li a:after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #000000;
+    transition: all 0.3s ease-out;
+    bottom: 0;
+    left: 50%;
+}
+
+.navbar-nav li a:hover::after {
+    content: '';
+    width: 100%;
+    left: 0;
+}
+
+._logo {
+    margin: 0px 20px;
+}
+
+.navbar_icons {
+    display: flex;
+    position: relative;
+    top: 8px;
+    width: 200px;
+}
+
+.navbar_icons li {
+    list-style: none;
+}
+
+._icon {
+    margin: 0px 10px 0px 80px;
+    color: #000000;
+    font-size: 1.5rem !important;
+}
+
+._icon:hover {
+    color: #000000;
+}
+
+._cart {
+    margin: 0px 20px 0px 10px;
+    border: 1px solid #000000;
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    text-align: center;
+    padding: 0px 0px;
+    position: absolute;
+    bottom: -3px;
+}
+
+._title {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin: 80px 0px;
+}
+
+.title_heading {
+    width: 70%;
+    color: #000000;
+    padding-left: 20px;
+    font-weight: bold;
+}
+
+.title_heading h3 {
+    line-height: 1.1;
+    font-size: 5.4rem;
+    margin: 0%;
+    font-weight:bolder;
+    font-family: 'CustomFont', 'sans-serif';
+}
+
+.mobile_shirt {
+    display: none;
+}
+
+.yoniform-hero-logo{
+    width: 30%;
+}
+
+.youniform-hero-logo svg{
+    position: relative;
+    width: 80% !important;
+    height: 100%;
+}
+
+
+
+.title_shirt {
+    width: 100%;
+    display: block;
+    z-index: 5;
+    position: relative;
+    justify-content: center;
+}
+
+
+#shirt_images {
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    z-index: 5;
+    max-width: 1920px; /* Added max-width */
+    margin: 0 auto; /* Added auto margins to center the element */
+}
+
+#shirt_images svg{
+    width: 420px !important;
+    margin-bottom: 2vh;
+    margin-top: 60px;
+    display: none;
+    width: auto;
+    z-index: '5';
+}
+
+@media(max-width:1120px){
+    #shirt_images svg{
+        width: 380px !important;
+        margin-bottom: 2vh;
+        margin-top: 40px;}
+}
+
+#shirt_images .active {
+    display: block;
+    position: relative;
+    right: 0;
+    left: 30%;
+    max-width: 100%; /* Added max-width to ensure it doesn't overflow */
+}
+
+
+.main_content {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.content_1 {
+    width: 50%;
+}
+
+.content_2 {
+    width: 50%;
+    float: center;
+    padding: 8% 8% 8% 20%;
+}
+
+.content_2 h1 {
+    font-size: 2.6rem;
+    font-weight: 500;
+    line-height: 1;
+    font-family: 'CustomFont', 'sans-serif';
+    color: #000000;
+}
+
+.content_2 h3 {
+    font-weight: 300;
+    text-align: justify;
+    font-size: 1.3rem;
+
+}
+
+.title-image {
+    width: 100%;
+}
+
+.title-image img {
+    width: 105%;
+}
+
+._video {
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+._video video {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    z-index: 1;
+}
+
+
+.qualities {
+    display: flex;
+    width: 100%;
+    margin-top: 100px;
+    padding: 0px 5%;
+}
+
+.quality_1 {
+    width: 30%;
+    padding-right: 20px;
+}
+
+.quality_2 {
+    width: 50%;
+    float: right;
+    margin-left: 30%;
+}
+
+.quality_1 p {
+    font-size: 1rem;
+    text-align: left;
+    font-weight: 500;
+    color: gray;
+}
+
+.quality_2 p {
+    font-size: 1rem;
+    margin-left: 30px;
+    font-weight: 500;
+    color: gray;
+}
+
+.quality-haeding{
+    height: 90%;
+    display: flex;
+    align-items: center;
+}
+
+.quality_1 h4 {
+    font-size: 3.5rem;
+    float: left;
+    line-height: 1.2;
+    font-family: 'CustomFont', 'sans-serif';
+    color: #000000;
+}
+
+.quality_2 li {
+    list-style: none;
+    font-size: 1.4rem;
+    border-bottom: 1px solid #75993d;
+    line-height: 2;
+    padding:15px 0px;
+    color: #75993d;
+    display: flex;
+    align-items: center;
+}
+
+.quality_2 li img {
+    width: 60px;
+    margin-right: 20px;
+}
+
+.loraFont {
+    font-size: 4rem;
+    font-family: 'CustomFont', 'sans-serif';
+}
+
+._icons {
+    padding-top: 30px;
+}
+
+._icons h4 {
+    font-size: 1.5rem;
+}
+
+.mainCard {
+    background: url('https://youniformbd.com/FrontendStyle/images/YOUR-CONVENIENCE2.png') no-repeat right;
+    background-size: contain;
+    height: 648px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 3%;
+}
+
+.mainCard h1 {
+    font-size: 5rem;
+    line-height: 1;
+    font-family: 'CustomFont', 'sans-serif';
+    font-weight: 500;
+    width: 85%;
+    float: left !important;
+    color: #000000;
+}
+
+.cards_1,
+.cards_3 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+}
+
+.cards_2 {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding-left: 7%;
+    margin-top: 100px;
+}
+
+.cards_1 {
+    padding-left: 7%;
+}
+
+.card-img1 {
+    width: 50%;
+    float: right;
+    padding: 0%;
+    margin: 0px;
+    text-align: right;
+}
+
+.card-img1 {
+    width: 50%;
+}
+
+.card-img {
+    width: 30%;
+}
+
+
+
+#quote {
+    font-size: 1rem;
+    line-height: 1.2;
+}
+
+.testBoxFoot {
+    font-size: 1.2rem;
+    color: #000000;
+    padding: 0% !important;
+    margin: 0%;
+}
+
+._card {
+    border: 1px solid gray;
+    min-width: 280px;
+    max-width: 280px;
+    border-radius: 5px;
+    padding: 15px;
+    text-align: left;
+    max-height: 180px;
+    margin-top: 50px;
+    z-index: 1;
+    background-color: white;
+}
+
+._card1 {
+    border: 1px solid gray;
+    min-width: 280px;
+    max-width: 280px;
+    border-radius: 5px;
+    padding: 15px;
+    float: center;
+    max-height: 180px;
+    margin-top: 50px;
+    z-index: 1;
+    background-color: white;
+}
+
+hr {
+    border: 1px dashed white;
+}
+
+.marqueeTxt {
+    font-size: 1.2rem;
+    z-index: 1;
+    width: 100%;
+    font-weight: 600;
+    line-height: 1;
+    font-family: 'CustomFont', 'sans-serif';
+    color: #000000;
+}
+
+.foot {
+    padding-left: 7%;
+    background: url('https://youniformbd.com/FrontendStyle/images/students2.png') no-repeat right;
+    background-size: contain;
+    width: 100%;
+    z-index: 7;
+    position: relative;
+    background-color: #f9f5ef;
+}
+
+.foot h3 {
+    font-size: 8.5rem;
+    line-height: 1;
+    font-weight: 900;
+    width: 80%;
+    font-family: 'CustomFont', 'sans-serif';
+    color: #000000;
+}
+
+.foot a :hover {
+    transition: .5s;
+    transform: rotate(360deg);
+}
+
+.footlogo{
+    margin-bottom: 30px;
+}
+
+.txt_title {
+    font-size: 1.4rem;
+}
+
+.menu-item {
+    list-style: none;
+    position: relative;
+}
+
+.menu-item a {
+    text-decoration: none;
+    color: #f9f5ef;
+    font-weight: 400;
+    text-transform: uppercase;
+    display: inline-block;
+    position: relative;
+    margin-top: 10px;
+}
+
+.menu-item a:after {    
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background:#f9f5ef;
+    transition:all 0.3s ease-out;
+    width: 0;
+  }
+.menu-item a:hover:after { 
+    width: 100%; 
+    left: 0; 
+  }
+  
+
+#nt_footer {
+    margin-top: 100px;
+    z-index: 7;
+    position: relative;
+    background-image: url('../images/plant.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #f9f5ef;
+    padding-top: 70px;
+}
+
+.youfoot {
+    z-index: 7;
+    position: relative;
+    background-color: #f9f5ef;
+}
+
+.copyRight {
+    font-size: 1rem;
+    font-weight: 300;
+    text-align: center;
+    padding: 50px 0px;
+}
+.widget{
+    text-align: center;
+    padding: 0rem 5px;
+}
+.widget ul{
+    padding: 0%;
+}
+.widget h3{
+    font-size: 1.4rem !important;
+    font-weight: 500;
+}
+.footLogo{
+    margin-bottom: 30px;
+}
+
+
+
+@media (min-width:993px) and (max-width:1350px){
+    .title_heading h3{
+        font-size: 4rem;
+    }
+}
+
+
+
+@media (min-width:641px) and (max-width:992px) {
+    html {
+        font-size: 55%;
+    }
+
+    .navbar-nav {
+        border: none;
+        border-radius: 0%;
+        text-align: center;
+    }
+
+    .navbar-nav li a:hover:after {
+        content: '';
+        width: 0%;
+    }
+
+    .navbar_icons {
+        text-align: center;
+        justify-content: center;
+    }
+
+    ._cart {
+        border: none;
+        border-radius: 0%;
+        margin: 0% 0% 0% 5px;
+        position: static;
+    }
+
+    ._icon {
+        margin: 0px;
+        color: black;
+    }
+
+    #shirt_images svg {
+        width: 260px !important;
+    }
+
+    .main_content {
+        display: block;
+    }
+
+    .content_1 {
+        width: 100%;
+        height: auto;
+        float: center;
+    }
+
+    .content_2 {
+        width: 100%;
+        float: left;
+        padding: 8%;
+    }
+    .content_2 h1{
+        font-size: 4rem;
+    }
+    .content_2 h3{
+        font-size: 2rem;
+    }
+
+    .image {
+        display: block;
+    }
+    ._video{
+        height: auto;
+    }
+  
+    .content3 {
+        max-width: 50vw;
+        height: 280px;
+        float: none;
+    }
+
+    .cards_1,
+    .cards_3 {
+        display: flex;
+        width: 95%;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .cards_2 {
+        display: flex;
+        width: 100%;
+        padding-left: 7%;
+        margin-top: 30px;
+        justify-content: space-between;
+    }
+
+    .card-img img, .card-img1 img{
+        width: 100%;
+        
+    }
+
+    ._card {
+        border: 1px solid gray;
+        width: 250px;
+        border-radius: 5px;
+        padding: 15px;
+        text-align: left;
+        max-height: 120px;
+        margin-top: 100px;
+        z-index: 1;
+        background-color: white;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    ._card1 {
+        border: 1px solid gray;
+        width: 250px;
+        border-radius: 5px;
+        padding: 15px;
+        max-height: 120px;
+        margin-top: 120px;
+        z-index: 1;
+        background-color: white;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .fa-regular {
+        font-size: 20px;
+    }
+
+    .footLogo{
+        margin-bottom: 20px;
+        height: 80px ;
+        width: 80px;
+    }
+
+    .menu-item a::after{
+        height: 1px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:640px) {
+    html {
+        font-size: 42%;
+    }
+
+    .navbar-nav {
+        border: none;
+        border-radius: 0%;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .navbar-nav li a:hover::after {
+        content: '';
+        width: 0%;
+    }
+
+    .navbar_icons {
+        padding-right: 90px;
+    justify-content: center;
+
+    }
+
+    ._cart {
+        border: none;
+        border-radius: 0%;
+        margin: 0% 0% 0% 5px;
+        position: static;
+    }
+
+    ._icon {
+        box-sizing: border-box;
+    }
+
+   
+
+    ._title{
+        flex-direction:column ;
+        justify-content: center;
+        margin: 40px 0px;
+    }
+
+
+    .mobile_shirt {
+        display: flex;
+        justify-content: center;
+    }
+
+    .mobile_shirt svg {
+        width: 250px;
+    }
+
+    .yoniform-hero-logo{
+        margin-top: 20px;
+    }
+
+    .yoniform-hero-logo {
+        width: 60%;
+    }
+
+    .title_heading {
+        width: 100%;
+        padding-left: 0px;
+    }
+
+    .title_heading h3 {
+        line-height: 1;
+        font-size: 6rem;
+        margin: 0%;
+        font-weight: 800;
+        text-align: center;
+        padding: 0%;
+    }
+
+    .main_content {
+        display: block;
+    }
+
+    .content_1 {
+        width: 100%;
+        height: auto;
+        float: center;
+        
+    }
+    .content_1 img{
+        position: relative;
+        width: 100%;
+    }
+
+    .content_2 {
+        width: 100%;
+        float: left;
+        padding: 8%;
+    }
+    .content_2 h1{
+        font-size: 4rem;
+    }
+    .content_2 h3{
+        font-size: 2rem;
+    }
+
+    .image {
+        display: block;
+    }
+
+    ._video{
+        height: auto;
+    }
+    .content3 {
+        max-width: 50vw;
+        height: 280px;
+        float: none;
+    }
+
+    .cards_1,
+    .cards_3 {
+        display: block;
+        width: 90%;
+        justify-content: center;
+        
+    }
+
+    .cards_2 {
+        display: block;
+        width: 95%;
+        padding-left: 7%;
+        margin-top: 30px;
+        justify-content: center;
+    }
+    .card-img img{
+        width: 100%;
+    }
+
+    .card-img1{
+        display: none;
+    }
+
+    ._card {
+        border: 1px solid gray;
+        width: 200px;
+        border-radius: 5px;
+        padding: 15px;
+        text-align: left;
+        max-height: 120px;
+        margin-top: 120px;
+        z-index: 1;
+        background-color: white;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    ._card1 {
+        border: 1px solid gray;
+        width: 200px;
+        border-radius: 5px;
+        padding: 15px;
+        max-height: 120px;
+        margin-top: 120px;
+        z-index: 1;
+        background-color: white;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .homeRowBg{
+        margin-top: 50px;
+    }
+
+    #shirt_images .active {
+        display: none !important;
+    }
+
+    .footLogo {
+        width: 50px;
+        height: 50px;
+        position: relative;
+        bottom: 7px;
+        margin-bottom: 0%;
+    }
+
+    .qualities {
+        display: block;
+    }
+
+    .quality_1 {
+        width: 100%;
+        padding: 7%;
+    }
+
+    .quality_2 {
+        margin-top: 50px;
+        width: 100%;
+    }
+
+    .widget {
+        text-align: center;
+        margin-top: 10px;
+    }
+
+ 
+    .menu-item a::after{
+        height: 1px;
+    }
+    
+    .foot {
+        padding-left: 7%;
+        background: none;
+        width: 98%;
+        z-index: 7;
+        position: relative;
+        background-color: #f9f5ef;
+    }
+
+    .fa-regular {
+        font-size: 20px;
+    }
+}
+
+
+/* Top Heading Split Animation */
+
+.split-text-animation div {
+    display: inline-block;
+  }
+
+
+/* Hide all the spans initially */
+.split-text-animation span {
+    display: inline-block;
+    opacity: 0;
+
+  }
+
+/* Apply different delays for even and odd letters */
+/* Modify the delay values as per your desired effect */
+.split-text-animation span:nth-child(odd) {
+    animation: moveFromBottom 1s forwards;
+}
+
+.split-text-animation span:nth-child(even) {
+    animation: moveFromTop 1s forwards;
+}
+
+@keyframes moveFromTop {
+    from {
+        transform: translateY(-200px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes moveFromBottom {
+    from {
+        transform: translateY(200px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
