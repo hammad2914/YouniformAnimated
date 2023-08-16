@@ -137,15 +137,7 @@ body::-webkit-scrollbar {
     display: none;
 }
 
-.yoniform-hero-logo{
-    width: 30%;
-}
 
-.youniform-hero-logo svg{
-    position: relative;
-    width: 80% !important;
-    height: 100%;
-}
 
 
 
@@ -159,8 +151,10 @@ body::-webkit-scrollbar {
 
 
 #shirt_images {
+    margin-top: 20px !important;
     position: fixed;
-    width: 100%;
+    width: 99.5%;
+    left: 0%;
     display: flex;
     justify-content: center;
     z-index: 5;
@@ -168,20 +162,16 @@ body::-webkit-scrollbar {
     margin: 0 auto; /* Added auto margins to center the element */
 }
 
-#shirt_images svg{
-    width: 420px !important;
-    margin-bottom: 2vh;
-    margin-top: 60px;
+
+
+
+
+#shirt_images img {
+    height: 70%;
+    margin: 2vh 0px;
     display: none;
     width: auto;
     z-index: '5';
-}
-
-@media(max-width:1120px){
-    #shirt_images svg{
-        width: 380px !important;
-        margin-bottom: 2vh;
-        margin-top: 40px;}
 }
 
 #shirt_images .active {
@@ -189,7 +179,8 @@ body::-webkit-scrollbar {
     position: relative;
     right: 0;
     left: 30%;
-    max-width: 100%; /* Added max-width to ensure it doesn't overflow */
+    max-width: 100%;
+    /* Added max-width to ensure it doesn't overflow */
 }
 
 
@@ -229,7 +220,17 @@ body::-webkit-scrollbar {
 }
 
 .title-image img {
-    width: 105%;
+    width: 100%;
+}
+
+@media(min-width:1920px){
+    .title-image img {
+        width: 104%;
+    }
+    #shirt_images {
+        left: auto;
+    }
+
 }
 
 ._video {
@@ -954,3 +955,5 @@ hr {
         opacity: 1;
     }
 }
+
+
