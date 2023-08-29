@@ -82,7 +82,6 @@ body::-webkit-scrollbar {
     display: flex;
     position: relative;
     top: 8px;
-    width: 200px;
 }
 
 .navbar_icons li {
@@ -137,50 +136,14 @@ body::-webkit-scrollbar {
     display: none;
 }
 
+.yoniform-hero-logo{
+    width: 30%;
+}
 
-
-
-
-.title_shirt {
-    width: 100%;
-    display: block;
-    z-index: 5;
+.youniform-hero-logo svg{
     position: relative;
-    justify-content: center;
-}
-
-
-#shirt_images {
-    margin-top: 20px !important;
-    position: fixed;
-    width: 99.5%;
-    left: 0%;
-    display: flex;
-    justify-content: center;
-    z-index: 5;
-    max-width: 1920px; /* Added max-width */
-    margin: 0 auto; /* Added auto margins to center the element */
-}
-
-
-
-
-
-#shirt_images img {
-    height: 70%;
-    margin: 2vh 0px;
-    display: none;
-    width: auto;
-    z-index: '5';
-}
-
-#shirt_images .active {
-    display: block;
-    position: relative;
-    right: 0;
-    left: 30%;
-    max-width: 100%;
-    /* Added max-width to ensure it doesn't overflow */
+    width: 80% !important;
+    height: 100%;
 }
 
 
@@ -220,17 +183,7 @@ body::-webkit-scrollbar {
 }
 
 .title-image img {
-    width: 100%;
-}
-
-@media(min-width:1920px){
-    .title-image img {
-        width: 104%;
-    }
-    #shirt_images {
-        left: auto;
-    }
-
+    width: 105%;
 }
 
 ._video {
@@ -355,7 +308,7 @@ body::-webkit-scrollbar {
     justify-content: space-between;
     width: 100%;
     padding-left: 7%;
-    margin-top: 100px;
+    margin-top: 30px;
 }
 
 .cards_1 {
@@ -400,7 +353,7 @@ body::-webkit-scrollbar {
     padding: 15px;
     text-align: left;
     max-height: 180px;
-    margin-top: 50px;
+    margin-top: 120px;
     z-index: 1;
     background-color: white;
 }
@@ -413,7 +366,7 @@ body::-webkit-scrollbar {
     padding: 15px;
     float: center;
     max-height: 180px;
-    margin-top: 50px;
+    margin-top: 120px;
     z-index: 1;
     background-color: white;
 }
@@ -577,9 +530,6 @@ hr {
         color: black;
     }
 
-    #shirt_images svg {
-        width: 260px !important;
-    }
 
     .main_content {
         display: block;
@@ -644,7 +594,7 @@ hr {
         padding: 15px;
         text-align: left;
         max-height: 120px;
-        margin-top: 100px;
+        margin-top: 120px;
         z-index: 1;
         background-color: white;
         margin-left: auto;
@@ -729,16 +679,6 @@ hr {
         flex-direction:column ;
         justify-content: center;
         margin: 40px 0px;
-    }
-
-
-    .mobile_shirt {
-        display: flex;
-        justify-content: center;
-    }
-
-    .mobile_shirt svg {
-        width: 250px;
     }
 
     .yoniform-hero-logo{
@@ -858,7 +798,7 @@ hr {
     }
 
     #shirt_images .active {
-        display: none !important;
+        display: none;
     }
 
     .footLogo {
@@ -906,54 +846,3 @@ hr {
         font-size: 20px;
     }
 }
-
-
-/* Top Heading Split Animation */
-
-.split-text-animation div {
-    display: inline-block;
-  }
-
-
-/* Hide all the spans initially */
-.split-text-animation span {
-    display: inline-block;
-    opacity: 0;
-
-  }
-
-/* Apply different delays for even and odd letters */
-/* Modify the delay values as per your desired effect */
-.split-text-animation span:nth-child(odd) {
-    animation: moveFromBottom 1s forwards;
-}
-
-.split-text-animation span:nth-child(even) {
-    animation: moveFromTop 1s forwards;
-}
-
-@keyframes moveFromTop {
-    from {
-        transform: translateY(-200px);
-        opacity: 0;
-    }
-
-    to {
-        transform: translateY(0);
-        opacity: 1;
-    }
-}
-
-@keyframes moveFromBottom {
-    from {
-        transform: translateY(200px);
-        opacity: 0;
-    }
-
-    to {
-        transform: translateY(0);
-        opacity: 1;
-    }
-}
-
-
