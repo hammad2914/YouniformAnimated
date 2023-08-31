@@ -1,16 +1,18 @@
 @font-face {
-    font-family: 'CustomFont'; 
-    src: url('../fonts/GTFlexa-ExtendedBold.ttf') format('truetype'); 
+    font-family: 'CustomFont';
+    src: url('../fonts/GTFlexa-ExtendedBold.ttf') format('truetype');
     font-weight: bold;
-  }
-  
+}
+
 
 @font-face {
-    font-family: 'CustomFont'; 
-    src: url('../fonts/GTFlexa-Medium.ttf') format('truetype'); 
-    font-weight:normal;
-  }  
-  
+    font-family: 'CustomFont';
+    src: url('../fonts/GTFlexa-Medium.ttf') format('truetype');
+    font-weight: normal;
+}
+
+
+
 body {
     margin: 0%;
     box-sizing: border-box;
@@ -18,9 +20,7 @@ body {
     font-size: 62.5%;
 }
 
-body::-webkit-scrollbar {
-    display: none;
-}
+
 
 .parent {
     background-color: #f9f5ef;
@@ -44,13 +44,14 @@ body::-webkit-scrollbar {
     text-transform: uppercase;
     font-weight: 500;
 }
-.navbar-nav li{
+
+.navbar-nav li {
     position: relative;
     margin: 0px 12px;
 }
 
 .navbar-nav li a {
-    
+
     position: relative;
     color: #000000;
 }
@@ -129,7 +130,7 @@ body::-webkit-scrollbar {
     line-height: 1.1;
     font-size: 5.4rem;
     margin: 0%;
-    font-weight:bolder;
+    font-weight: bolder;
     font-family: 'CustomFont', 'sans-serif';
 }
 
@@ -155,8 +156,10 @@ body::-webkit-scrollbar {
     display: flex;
     justify-content: center;
     z-index: 5;
-    max-width: 1920px; /* Added max-width */
-    margin: 0 auto; /* Added auto margins to center the element */
+    max-width: 1920px;
+    /* Added max-width */
+    margin: 0 auto;
+    /* Added auto margins to center the element */
 }
 
 #shirt_images img {
@@ -173,6 +176,7 @@ body::-webkit-scrollbar {
     right: 0;
     left: 30%;
     max-width: 100%;
+    transition: all 0.5s;
     /* Added max-width to ensure it doesn't overflow */
 }
 
@@ -218,10 +222,11 @@ body::-webkit-scrollbar {
 
 
 
-@media(min-width:1920px){
+@media(min-width:1920px) {
     .title-image img {
         width: 104%;
     }
+
     #shirt_images {
         left: auto;
     }
@@ -277,7 +282,7 @@ body::-webkit-scrollbar {
     color: gray;
 }
 
-.quality-haeding{
+.quality-haeding {
     height: 90%;
     display: flex;
     align-items: center;
@@ -296,7 +301,7 @@ body::-webkit-scrollbar {
     font-size: 1.4rem;
     border-bottom: 1px solid #75993d;
     line-height: 2;
-    padding:15px 0px;
+    padding: 15px 0px;
     color: #75993d;
     display: flex;
     align-items: center;
@@ -320,7 +325,7 @@ body::-webkit-scrollbar {
     font-size: 1.5rem;
 }
 
-.qualities2{
+.qualities2 {
     z-index: 6 !important;
     position: relative;
 }
@@ -461,7 +466,7 @@ hr {
     transform: rotate(360deg);
 }
 
-.footlogo{
+.footlogo {
     margin-bottom: 30px;
 }
 
@@ -484,22 +489,23 @@ hr {
     margin-top: 10px;
 }
 
-.menu-item a:after {    
+.menu-item a:after {
     bottom: 0;
     content: "";
     display: block;
     height: 2px;
     left: 50%;
     position: absolute;
-    background:#f9f5ef;
-    transition:all 0.3s ease-out;
+    background: #f9f5ef;
+    transition: all 0.3s ease-out;
     width: 0;
-  }
-.menu-item a:hover:after { 
-    width: 100%; 
-    left: 0; 
-  }
-  
+}
+
+.menu-item a:hover:after {
+    width: 100%;
+    left: 0;
+}
+
 
 #nt_footer {
     margin-top: 100px;
@@ -524,25 +530,29 @@ hr {
     text-align: center;
     padding: 50px 0px;
 }
-.widget{
+
+.widget {
     text-align: center;
     padding: 0rem 5px;
 }
-.widget ul{
+
+.widget ul {
     padding: 0%;
 }
-.widget h3{
+
+.widget h3 {
     font-size: 1.4rem !important;
     font-weight: 500;
 }
-.footLogo{
+
+.footLogo {
     margin-bottom: 30px;
 }
 
 
 
-@media (min-width:993px) and (max-width:1350px){
-    .title_heading h3{
+@media (min-width:993px) and (max-width:1350px) {
+    .title_heading h3 {
         font-size: 4rem;
     }
 }
@@ -601,20 +611,23 @@ hr {
         float: left;
         padding: 8%;
     }
-    .content_2 h1{
+
+    .content_2 h1 {
         font-size: 4rem;
     }
-    .content_2 h3{
+
+    .content_2 h3 {
         font-size: 2rem;
     }
 
     .image {
         display: block;
     }
-    ._video{
+
+    ._video {
         height: auto;
     }
-  
+
     .content3 {
         max-width: 50vw;
         height: 280px;
@@ -637,9 +650,9 @@ hr {
         justify-content: space-between;
     }
 
-    .card-img img, .card-img1 img{
+    .card-img img, .card-img1 img {
         width: 100%;
-        
+
     }
 
     ._card {
@@ -673,13 +686,13 @@ hr {
         font-size: 20px;
     }
 
-    .footLogo{
+    .footLogo {
         margin-bottom: 20px;
-        height: 80px ;
+        height: 80px;
         width: 80px;
     }
 
-    .menu-item a::after{
+    .menu-item a::after {
         height: 1px;
     }
 }
@@ -713,7 +726,7 @@ hr {
 
     .navbar_icons {
         padding-right: 90px;
-    justify-content: center;
+        justify-content: center;
 
     }
 
@@ -728,10 +741,10 @@ hr {
         box-sizing: border-box;
     }
 
-   
 
-    ._title{
-        flex-direction:column ;
+
+    ._title {
+        flex-direction: column;
         justify-content: center;
         margin: 40px 0px;
     }
@@ -746,7 +759,7 @@ hr {
         width: 250px;
     }
 
-    .yoniform-hero-logo{
+    .yoniform-hero-logo {
         margin-top: 20px;
     }
 
@@ -776,9 +789,10 @@ hr {
         width: 100%;
         height: auto;
         float: center;
-        
+
     }
-    .content_1 img{
+
+    .content_1 img {
         position: relative;
         width: 100%;
     }
@@ -788,10 +802,12 @@ hr {
         float: left;
         padding: 8%;
     }
-    .content_2 h1{
+
+    .content_2 h1 {
         font-size: 4rem;
     }
-    .content_2 h3{
+
+    .content_2 h3 {
         font-size: 2rem;
     }
 
@@ -799,9 +815,10 @@ hr {
         display: block;
     }
 
-    ._video{
+    ._video {
         height: auto;
     }
+
     .content3 {
         max-width: 50vw;
         height: 280px;
@@ -813,7 +830,7 @@ hr {
         display: block;
         width: 90%;
         justify-content: center;
-        
+
     }
 
     .cards_2 {
@@ -823,11 +840,12 @@ hr {
         margin-top: 30px;
         justify-content: center;
     }
-    .card-img img{
+
+    .card-img img {
         width: 100%;
     }
 
-    .card-img1{
+    .card-img1 {
         display: none;
     }
 
@@ -858,7 +876,7 @@ hr {
         margin-right: auto;
     }
 
-    .homeRowBg{
+    .homeRowBg {
         margin-top: 50px;
     }
 
@@ -893,11 +911,11 @@ hr {
         margin-top: 10px;
     }
 
- 
-    .menu-item a::after{
+
+    .menu-item a::after {
         height: 1px;
     }
-    
+
     .foot {
         padding-left: 7%;
         background: none;
@@ -917,7 +935,7 @@ hr {
 
 .split-text-animation div {
     display: inline-block;
-  }
+}
 
 
 /* Hide all the spans initially */
@@ -925,7 +943,7 @@ hr {
     display: inline-block;
     opacity: 0;
 
-  }
+}
 
 /* Apply different delays for even and odd letters */
 /* Modify the delay values as per your desired effect */
@@ -962,5 +980,18 @@ hr {
 }
 
 
+/* ))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))) */
 
+#two {
+    height: auto;
+    overflow: hidden;
+}
+
+.section>.row>.col {
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
 

@@ -1,5 +1,10 @@
+
 document.addEventListener('scroll', function () {
   console.log($(window).scrollTop());
+  shirtArray = ['#shirt_16', '#shirt_17', '#shirt_18', '#shirt_19', '#shirt_20', '#shirt_21', '#shirt_22', '#shirt_23', '#shirt_24', '#shirt_25', '#shirt_26', '#shirt_27','#shirt_1', '#shirt_2', '#shirt_3', '#shirt_4', '#shirt_5', '#shirt_6', '#shirt_7', '#shirt_8', '#shirt_9', '#shirt_10',
+  '#shirt_11', '#shirt_12', '#shirt_13', '#shirt_14', '#shirt_15',]
+  let totalShirts = shirtArray.length;
+  let scrollTop = $(window).scrollTop();
 
   if ($(window).scrollTop() < 30) {
     $('.active').removeClass('active');
@@ -75,6 +80,12 @@ document.addEventListener('scroll', function () {
     $('.active').removeClass('active');
     $('#shirt_15').addClass('active');
     $('#shirt_15').css('left', '2%');
+  }
+
+  if ($(window).scrollTop() >= 450 && $(window).scrollTop() < 480) {
+    $('.active').removeClass('active');
+    $('#shirt_15').addClass('active');
+    $('#shirt_15').css('left', '0%');
   }
 
   if ($(window).scrollTop() >= 450 && $(window).scrollTop() < 480) {
@@ -1352,7 +1363,549 @@ document.addEventListener('scroll', function () {
     $('#shirt_27').addClass('active');
     $('#shirt_27').css('left', '0%');
   }
+  if ($(window).scrollTop() >= 8100 && $(window).scrollTop() < 8130) {
+    $('.active').removeClass('active');
+    $('#shirt_1').addClass('active');
+    $('#shirt_1').css('left', '0%');
+  }
+  if ($(window).scrollTop() >= 8130 && $(window).scrollTop() < 8160) {
+    $('.active').removeClass('active');
+    $('#shirt_2').addClass('active');
+    $('#shirt_2').css('left', '0%');
+  }
+  if ($(window).scrollTop() >= 8160 && $(window).scrollTop() < 8190) {
+    $('.active').removeClass('active');
+    $('#shirt_3').addClass('active');
+    $('#shirt_3').css('left', '0%');
+  }
+  if ($(window).scrollTop() >= 8190 && $(window).scrollTop() < 8220) {
+    $('.active').removeClass('active');
+    $('#shirt_4').addClass('active');
+    $('#shirt_4').css('left', '0%');
+  }
+  if ($(window).scrollTop() >= 8220 && $(window).scrollTop() < 8250) {
+    $('.active').removeClass('active');
+    $('#shirt_5').addClass('active');
+    $('#shirt_5').css('left', '0%');
+  }
+  if ($(window).scrollTop() >= 8250 && $(window).scrollTop() < 8280) {
+    $('.active').removeClass('active');
+    $('#shirt_6').addClass('active');
+    $('#shirt_6').css('left', '0%');
+  }
+  if ($(window).scrollTop() >= 8280 && $(window).scrollTop() < 8310) {
+    $('.active').removeClass('active');
+    $('#shirt_7').addClass('active');
+    $('#shirt_7').css('left', '0%');
+  }
+  if ($(window).scrollTop() >= 8310 && $(window).scrollTop() < 8340) {
+    $('.active').removeClass('active');
+    $('#shirt_8').addClass('active');
+    $('#shirt_8').css('left', '0%');
+  }
+  if ($(window).scrollTop() >= 8340 && $(window).scrollTop() < 8370) {
+    $('.active').removeClass('active');
+    $('#shirt_9').addClass('active');
+    $('#shirt_9').css('left', '0%');
+  }
+  if ($(window).scrollTop() >= 8370 && $(window).scrollTop() < 8400) {
+    $('.active').removeClass('active');
+    $('#shirt_10').addClass('active');
+    $('#shirt_10').css('left', '0%');
+  }
+  if ($(window).scrollTop() >= 8400 && $(window).scrollTop() < 8430) {
+    $('.active').removeClass('active');
+    $('#shirt_11').addClass('active');
+    $('#shirt_11').css('left', '0%');
+  }
+  if ($(window).scrollTop() >= 8430 && $(window).scrollTop() < 8460) {
+    $('.active').removeClass('active');
+    $('#shirt_12').addClass('active');
+    $('#shirt_12').css('left', '0%');
+  }
+  if ($(window).scrollTop() >= 8460 && $(window).scrollTop() < 8490) {
+    $('.active').removeClass('active');
+    $('#shirt_13').addClass('active');
+    $('#shirt_13').css('left', '0%');
+  }
+  if ($(window).scrollTop() >= 8490 && $(window).scrollTop() < 8520) {
+    $('.active').removeClass('active');
+    $('#shirt_14').addClass('active');
+    $('#shirt_14').css('left', '0%');
+  }
+  if ($(window).scrollTop() >= 8520 && $(window).scrollTop() < 8550) {
+    $('.active').removeClass('active');
+    $('#shirt_15').addClass('active');
+    $('#shirt_15').css('left', '0%');
+  }
+  if ($(window).scrollTop() >= 8550 && $(window).scrollTop() < 8580) {
+    $('.active').removeClass('active');
+    $('#shirt_16').addClass('active');
+    $('#shirt_16').css('left', '0%');
+  }
+  if ($(window).scrollTop() >= 8580 && $(window).scrollTop() < 8610) {
+    $('.active').removeClass('active');
+    $('#shirt_17').addClass('active');
+    $('#shirt_17').css('left', '0%');
+  }
+  if ($(window).scrollTop() >= 8610 && $(window).scrollTop() < 8640) {
+    $('.active').removeClass('active');
+    $('#shirt_18').addClass('active');
+    $('#shirt_18').css('left', '0%');
+  }
+  if ($(window).scrollTop() >= 8640 && $(window).scrollTop() < 8670) {
+    $('.active').removeClass('active');
+    $('#shirt_19').addClass('active');
+    $('#shirt_19').css('left', '0%');
+  }
+  if ($(window).scrollTop() >= 8670 && $(window).scrollTop() < 8700) {
+    $('.active').removeClass('active');
+    $('#shirt_20').addClass('active');
+    $('#shirt_20').css('left', '0%');
+  }
+  if ($(window).scrollTop() >= 8700 && $(window).scrollTop() < 8730) {
+    $('.active').removeClass('active');
+    $('#shirt_21').addClass('active');
+    $('#shirt_21').css('left', '0%');
+  }
+  if ($(window).scrollTop() >= 8730 && $(window).scrollTop() < 8760) {
+    $('.active').removeClass('active');
+    $('#shirt_22').addClass('active');
+    $('#shirt_22').css('left', '0%');
+  }
+  if ($(window).scrollTop() >= 8760 && $(window).scrollTop() < 8790) {
+    $('.active').removeClass('active');
+    $('#shirt_23').addClass('active');
+    $('#shirt_23').css('left', '0%');
+  }
+  if ($(window).scrollTop() >= 8790 && $(window).scrollTop() < 8820) {
+    $('.active').removeClass('active');
+    $('#shirt_24').addClass('active');
+    $('#shirt_24').css('left', '0%');
+  }
+  if ($(window).scrollTop() >= 8820 && $(window).scrollTop() < 8850) {
+    $('.active').removeClass('active');
+    $('#shirt_25').addClass('active');
+    $('#shirt_25').css('left', '0%');
+  }
+  if ($(window).scrollTop() >= 8850 && $(window).scrollTop() < 8880) {
+    $('.active').removeClass('active');
+    $('#shirt_26').addClass('active');
+    $('#shirt_26').css('left', '0%');
+  }
+  if ($(window).scrollTop() >= 8880 && $(window).scrollTop() < 8910) {
+    $('.active').removeClass('active');
+    $('#shirt_27').addClass('active');
+    $('#shirt_27').css('left', '0%');
+  }
+  if ($(window).scrollTop() >= 8910 && $(window).scrollTop() < 8940) {
+    $('.active').removeClass('active');
+    $('#shirt_1').addClass('active');
+    $('#shirt_1').css('left', '0%');
+  }
+  if ($(window).scrollTop() >= 8940 && $(window).scrollTop() < 8970) {
+    $('.active').removeClass('active');
+    $('#shirt_2').addClass('active');
+    $('#shirt_2').css('left', '0%');
+  }
+  if ($(window).scrollTop() >= 8970 && $(window).scrollTop() < 9000) {
+    $('.active').removeClass('active');
+    $('#shirt_3').addClass('active');
+    $('#shirt_3').css('left', '0%');
+  }
+  if ($(window).scrollTop() >= 9000 && $(window).scrollTop() < 9030) {
+    $('.active').removeClass('active');
+    $('#shirt_4').addClass('active');
+    $('#shirt_4').css('left', '0%');
+  }
+  if ($(window).scrollTop() >= 9030 && $(window).scrollTop() < 9060) {
+    $('.active').removeClass('active');
+    $('#shirt_5').addClass('active');
+    $('#shirt_5').css('left', '0%');
+  }
+  if ($(window).scrollTop() >= 9060 && $(window).scrollTop() < 9090) {
+    $('.active').removeClass('active');
+    $('#shirt_6').addClass('active');
+    $('#shirt_6').css('left', '0%');
+  }
+  if ($(window).scrollTop() >= 9090 && $(window).scrollTop() < 9120) {
+    $('.active').removeClass('active');
+    $('#shirt_7').addClass('active');
+    $('#shirt_7').css('left', '0%');
+  }
+  if ($(window).scrollTop() >= 9120 && $(window).scrollTop() < 9150) {
+    $('.active').removeClass('active');
+    $('#shirt_8').addClass('active');
+    $('#shirt_8').css('left', '0%');
+  }
+  if ($(window).scrollTop() >= 9150 && $(window).scrollTop() < 9180) {
+    $('.active').removeClass('active');
+    $('#shirt_9').addClass('active');
+    $('#shirt_9').css('left', '0%');
+  }
+  if ($(window).scrollTop() >= 9180 && $(window).scrollTop() < 9210) {
+    $('.active').removeClass('active');
+    $('#shirt_10').addClass('active');
+    $('#shirt_10').css('left', '0%');
+  }
+  if ($(window).scrollTop() >= 9210 && $(window).scrollTop() < 9240) {
+    $('.active').removeClass('active');
+    $('#shirt_11').addClass('active');
+    $('#shirt_11').css('left', '0%');
+  }
+  if ($(window).scrollTop() >= 9240 && $(window).scrollTop() < 9270) {
+    $('.active').removeClass('active');
+    $('#shirt_12').addClass('active');
+    $('#shirt_12').css('left', '0%');
+  }
+  if ($(window).scrollTop() >= 9270 && $(window).scrollTop() < 9300) {
+    $('.active').removeClass('active');
+    $('#shirt_13').addClass('active');
+    $('#shirt_13').css('left', '0%');
+  }
+  if ($(window).scrollTop() >= 9300 && $(window).scrollTop() < 9330) {
+    $('.active').removeClass('active');
+    $('#shirt_14').addClass('active');
+    $('#shirt_14').css('left', '0%');
+  }
+  if ($(window).scrollTop() >= 9330 && $(window).scrollTop() < 9360) {
+    $('.active').removeClass('active');
+    $('#shirt_15').addClass('active');
+    $('#shirt_15').css('left', '0%');
+  }
+  if ($(window).scrollTop() >= 9360 && $(window).scrollTop() < 9390) {
+    $('.active').removeClass('active');
+    $('#shirt_16').addClass('active');
+    $('#shirt_16').css('left', '0%');
+  }
+  if ($(window).scrollTop() >= 9390 && $(window).scrollTop() < 9420) {
+    $('.active').removeClass('active');
+    $('#shirt_17').addClass('active');
+    $('#shirt_17').css('left', '0%');
+  }
+  if ($(window).scrollTop() >= 9420 && $(window).scrollTop() < 9450) {
+    $('.active').removeClass('active');
+    $('#shirt_18').addClass('active');
+    $('#shirt_18').css('left', '0%');
+  }
+  if ($(window).scrollTop() >= 9450 && $(window).scrollTop() < 9480) {
+    $('.active').removeClass('active');
+    $('#shirt_19').addClass('active');
+    $('#shirt_19').css('left', '0%');
+  }
+  if ($(window).scrollTop() >= 9480 && $(window).scrollTop() < 9510) {
+    $('.active').removeClass('active');
+    $('#shirt_20').addClass('active');
+    $('#shirt_20').css('left', '0%');
+  }
+  if ($(window).scrollTop() >= 9510 && $(window).scrollTop() < 9540) {
+    $('.active').removeClass('active');
+    $('#shirt_21').addClass('active');
+    $('#shirt_21').css('left', '0%');
+  }
+  if ($(window).scrollTop() >= 9540 && $(window).scrollTop() < 9570) {
+    $('.active').removeClass('active');
+    $('#shirt_22').addClass('active');
+    $('#shirt_22').css('left', '0%');
+  }
+  if ($(window).scrollTop() >= 9570 && $(window).scrollTop() < 9600) {
+    $('.active').removeClass('active');
+    $('#shirt_23').addClass('active');
+    $('#shirt_23').css('left', '0%');
+  }
+  if ($(window).scrollTop() >= 9600 && $(window).scrollTop() < 9630) {
+    $('.active').removeClass('active');
+    $('#shirt_24').addClass('active');
+    $('#shirt_24').css('left', '0%');
+  }
+  if ($(window).scrollTop() >= 9630 && $(window).scrollTop() < 9660) {
+    $('.active').removeClass('active');
+    $('#shirt_25').addClass('active');
+    $('#shirt_25').css('left', '0%');
+  }
+  if ($(window).scrollTop() >= 9660 && $(window).scrollTop() < 9690) {
+    $('.active').removeClass('active');
+    $('#shirt_26').addClass('active');
+    $('#shirt_26').css('left', '0%');
+  }
+  if ($(window).scrollTop() >= 9690 && $(window).scrollTop() < 9720) {
+    $('.active').removeClass('active');
+    $('#shirt_27').addClass('active');
+    $('#shirt_27').css('left', '0%');
+  }
+  if ($(window).scrollTop() >= 9720 && $(window).scrollTop() < 9750) {
+    $('.active').removeClass('active');
+    $('#shirt_1').addClass('active');
+    $('#shirt_1').css('left', '0%');
+  }
+  if ($(window).scrollTop() >= 9750 && $(window).scrollTop() < 9780) {
+    $('.active').removeClass('active');
+    $('#shirt_2').addClass('active');
+    $('#shirt_2').css('left', '0%');
+  }
+  if ($(window).scrollTop() >= 9780 && $(window).scrollTop() < 9810) {
+    $('.active').removeClass('active');
+    $('#shirt_3').addClass('active');
+    $('#shirt_3').css('left', '0%');
+  }
+  if ($(window).scrollTop() >= 9810 && $(window).scrollTop() < 9840) {
+    $('.active').removeClass('active');
+    $('#shirt_4').addClass('active');
+    $('#shirt_4').css('left', '0%');
+  }
+  if ($(window).scrollTop() >= 9840 && $(window).scrollTop() < 9870) {
+    $('.active').removeClass('active');
+    $('#shirt_5').addClass('active');
+    $('#shirt_5').css('left', '0%');
+  }
+  if ($(window).scrollTop() >= 9870 && $(window).scrollTop() < 9900) {
+    $('.active').removeClass('active');
+    $('#shirt_6').addClass('active');
+    $('#shirt_6').css('left', '0%');
+  }
+  if ($(window).scrollTop() >= 9900 && $(window).scrollTop() < 9930) {
+    $('.active').removeClass('active');
+    $('#shirt_7').addClass('active');
+    $('#shirt_7').css('left', '0%');
+  }
+  if ($(window).scrollTop() >= 9930 && $(window).scrollTop() < 9960) {
+    $('.active').removeClass('active');
+    $('#shirt_8').addClass('active');
+    $('#shirt_8').css('left', '0%');
+  }
+  if ($(window).scrollTop() >= 9960 && $(window).scrollTop() < 9990) {
+    $('.active').removeClass('active');
+    $('#shirt_9').addClass('active');
+    $('#shirt_9').css('left', '0%');
+  }
+  if ($(window).scrollTop() >= 9990 && $(window).scrollTop() < 10020) {
+    $('.active').removeClass('active');
+    $('#shirt_10').addClass('active');
+    $('#shirt_10').css('left', '0%');
+  }
+  if ($(window).scrollTop() >= 10020 && $(window).scrollTop() < 10050) {
+    $('.active').removeClass('active');
+    $('#shirt_11').addClass('active');
+    $('#shirt_11').css('left', '0%');
+  }
+  if ($(window).scrollTop() >= 10050 && $(window).scrollTop() < 10080) {
+    $('.active').removeClass('active');
+    $('#shirt_12').addClass('active');
+    $('#shirt_12').css('left', '0%');
+  }
+  if ($(window).scrollTop() >= 10080 && $(window).scrollTop() < 10110) {
+    $('.active').removeClass('active');
+    $('#shirt_13').addClass('active');
+    $('#shirt_13').css('left', '0%');
+  }
+  if ($(window).scrollTop() >= 10110 && $(window).scrollTop() < 10140) {
+    $('.active').removeClass('active');
+    $('#shirt_14').addClass('active');
+    $('#shirt_14').css('left', '0%');
+  }
+  if ($(window).scrollTop() >= 10140 && $(window).scrollTop() < 10170) {
+    $('.active').removeClass('active');
+    $('#shirt_15').addClass('active');
+    $('#shirt_15').css('left', '0%');
+  }
+  if ($(window).scrollTop() >= 10170 && $(window).scrollTop() < 10200) {
+    $('.active').removeClass('active');
+    $('#shirt_16').addClass('active');
+    $('#shirt_16').css('left', '0%');
+  }
+  if ($(window).scrollTop() >= 10200 && $(window).scrollTop() < 10230) {
+    $('.active').removeClass('active');
+    $('#shirt_17').addClass('active');
+    $('#shirt_17').css('left', '0%');
+  }
+  if ($(window).scrollTop() >= 10230 && $(window).scrollTop() < 10260) {
+    $('.active').removeClass('active');
+    $('#shirt_18').addClass('active');
+    $('#shirt_18').css('left', '0%');
+  }
+  if ($(window).scrollTop() >= 10260 && $(window).scrollTop() < 10290) {
+    $('.active').removeClass('active');
+    $('#shirt_19').addClass('active');
+    $('#shirt_19').css('left', '0%');
+  }
+  if ($(window).scrollTop() >= 10290 && $(window).scrollTop() < 10320) {
+    $('.active').removeClass('active');
+    $('#shirt_20').addClass('active');
+    $('#shirt_20').css('left', '0%');
+  }
+  if ($(window).scrollTop() >= 10320 && $(window).scrollTop() < 10350) {
+    $('.active').removeClass('active');
+    $('#shirt_21').addClass('active');
+    $('#shirt_21').css('left', '0%');
+  }
+  if ($(window).scrollTop() >= 10350 && $(window).scrollTop() < 10380) {
+    $('.active').removeClass('active');
+    $('#shirt_22').addClass('active');
+    $('#shirt_22').css('left', '0%');
+  }
+  if ($(window).scrollTop() >= 10380 && $(window).scrollTop() < 10410) {
+    $('.active').removeClass('active');
+    $('#shirt_23').addClass('active');
+    $('#shirt_23').css('left', '0%');
+  }
+  if ($(window).scrollTop() >= 10410 && $(window).scrollTop() < 10440) {
+    $('.active').removeClass('active');
+    $('#shirt_24').addClass('active');
+    $('#shirt_24').css('left', '0%');
+  }
+  if ($(window).scrollTop() >= 10440 && $(window).scrollTop() < 10470) {
+    $('.active').removeClass('active');
+    $('#shirt_25').addClass('active');
+    $('#shirt_25').css('left', '0%');
+  }
+  if ($(window).scrollTop() >= 10470 && $(window).scrollTop() < 10500) {
+    $('.active').removeClass('active');
+    $('#shirt_26').addClass('active');
+    $('#shirt_26').css('left', '0%');
+  }
+  if ($(window).scrollTop() >= 10500 && $(window).scrollTop() < 10530) {
+    $('.active').removeClass('active');
+    $('#shirt_27').addClass('active');
+    $('#shirt_27').css('left', '0%');
+  }
+  if ($(window).scrollTop() >= 10530 && $(window).scrollTop() < 10560) {
+    $('.active').removeClass('active');
+    $('#shirt_1').addClass('active');
+    $('#shirt_1').css('left', '0%');
+  }
+  if ($(window).scrollTop() >= 10560 && $(window).scrollTop() < 10590) {
+    $('.active').removeClass('active');
+    $('#shirt_2').addClass('active');
+    $('#shirt_2').css('left', '0%');
+  }
+  if ($(window).scrollTop() >= 10590 && $(window).scrollTop() < 10620) {
+    $('.active').removeClass('active');
+    $('#shirt_3').addClass('active');
+    $('#shirt_3').css('left', '0%');
+  }
+  if ($(window).scrollTop() >= 10620 && $(window).scrollTop() < 10650) {
+    $('.active').removeClass('active');
+    $('#shirt_4').addClass('active');
+    $('#shirt_4').css('left', '0%');
+  }
+  if ($(window).scrollTop() >= 10650 && $(window).scrollTop() < 10680) {
+    $('.active').removeClass('active');
+    $('#shirt_5').addClass('active');
+    $('#shirt_5').css('left', '0%');
+  }
+  if ($(window).scrollTop() >= 10680 && $(window).scrollTop() < 10710) {
+    $('.active').removeClass('active');
+    $('#shirt_6').addClass('active');
+    $('#shirt_6').css('left', '0%');
+  }
+  if ($(window).scrollTop() >= 10710 && $(window).scrollTop() < 10740) {
+    $('.active').removeClass('active');
+    $('#shirt_7').addClass('active');
+    $('#shirt_7').css('left', '0%');
+  }
+  if ($(window).scrollTop() >= 10740 && $(window).scrollTop() < 10770) {
+    $('.active').removeClass('active');
+    $('#shirt_8').addClass('active');
+    $('#shirt_8').css('left', '0%');
+  }
+  if ($(window).scrollTop() >= 10770 && $(window).scrollTop() < 10800) {
+    $('.active').removeClass('active');
+    $('#shirt_9').addClass('active');
+    $('#shirt_9').css('left', '0%');
+  }
+  if ($(window).scrollTop() >= 10800 && $(window).scrollTop() < 10830) {
+    $('.active').removeClass('active');
+    $('#shirt_10').addClass('active');
+    $('#shirt_10').css('left', '0%');
+  }
+  if ($(window).scrollTop() >= 10830 && $(window).scrollTop() < 10860) {
+    $('.active').removeClass('active');
+    $('#shirt_11').addClass('active');
+    $('#shirt_11').css('left', '0%');
+  }
+  if ($(window).scrollTop() >= 10860 && $(window).scrollTop() < 10890) {
+    $('.active').removeClass('active');
+    $('#shirt_12').addClass('active');
+    $('#shirt_12').css('left', '0%');
+  }
+  if ($(window).scrollTop() >= 10890 && $(window).scrollTop() < 10920) {
+    $('.active').removeClass('active');
+    $('#shirt_13').addClass('active');
+    $('#shirt_13').css('left', '0%');
+  }
+  if ($(window).scrollTop() >= 10920 && $(window).scrollTop() < 10950) {
+    $('.active').removeClass('active');
+    $('#shirt_14').addClass('active');
+    $('#shirt_14').css('left', '0%');
+  }
+  if ($(window).scrollTop() >= 10950 && $(window).scrollTop() < 10980) {
+    $('.active').removeClass('active');
+    $('#shirt_15').addClass('active');
+    $('#shirt_15').css('left', '0%');
+  }
+  if ($(window).scrollTop() >= 10980 && $(window).scrollTop() < 11010) {
+    $('.active').removeClass('active');
+    $('#shirt_16').addClass('active');
+    $('#shirt_16').css('left', '0%');
+  }
+  if ($(window).scrollTop() >= 11010 && $(window).scrollTop() < 11040) {
+    $('.active').removeClass('active');
+    $('#shirt_17').addClass('active');
+    $('#shirt_17').css('left', '0%');
+  }
+  if ($(window).scrollTop() >= 11040 && $(window).scrollTop() < 11070) {
+    $('.active').removeClass('active');
+    $('#shirt_18').addClass('active');
+    $('#shirt_18').css('left', '0%');
+  }
+  if ($(window).scrollTop() >= 11070 && $(window).scrollTop() < 11100) {
+    $('.active').removeClass('active');
+    $('#shirt_19').addClass('active');
+    $('#shirt_19').css('left', '0%');
+  }
+  if ($(window).scrollTop() >= 11100 && $(window).scrollTop() < 11130) {
+    $('.active').removeClass('active');
+    $('#shirt_20').addClass('active');
+    $('#shirt_20').css('left', '0%');
+  }
+  if ($(window).scrollTop() >= 11130 && $(window).scrollTop() < 11160) {
+    $('.active').removeClass('active');
+    $('#shirt_21').addClass('active');
+    $('#shirt_21').css('left', '0%');
+  }
+  if ($(window).scrollTop() >= 11160 && $(window).scrollTop() < 11190) {
+    $('.active').removeClass('active');
+    $('#shirt_22').addClass('active');
+    $('#shirt_22').css('left', '0%');
+  }
+  if ($(window).scrollTop() >= 11190 && $(window).scrollTop() < 11220) {
+    $('.active').removeClass('active');
+    $('#shirt_23').addClass('active');
+    $('#shirt_23').css('left', '0%');
+  }
+  if ($(window).scrollTop() >= 11220 && $(window).scrollTop() < 11250) {
+    $('.active').removeClass('active');
+    $('#shirt_24').addClass('active');
+    $('#shirt_24').css('left', '0%');
+  }
+  if ($(window).scrollTop() >= 11250 && $(window).scrollTop() < 11280) {
+    $('.active').removeClass('active');
+    $('#shirt_25').addClass('active');
+    $('#shirt_25').css('left', '0%');
+  }
+  if ($(window).scrollTop() >= 11280 && $(window).scrollTop() < 11310) {
+    $('.active').removeClass('active');
+    $('#shirt_26').addClass('active');
+    $('#shirt_26').css('left', '0%');
+  }
+  if ($(window).scrollTop() >= 11310 && $(window).scrollTop() < 11340) {
+    $('.active').removeClass('active');
+    $('#shirt_27').addClass('active');
+    $('#shirt_27').css('left', '0%');
+  }
 });
+
+// Hide Logo when it reaches the footer
 
 document.addEventListener("DOMContentLoaded", function () {
   const image = document.getElementById("shirt_images");
@@ -1372,19 +1925,7 @@ document.addEventListener("DOMContentLoaded", function () {
   window.addEventListener("scroll", handleScroll);
 });
 
-// Scroll Pin Function
 
-TweenMax.set("#box1", { transformOrigin: "center center" });
-var controller = new ScrollMagic.Controller();
-
-
-new ScrollMagic.Scene({
-  triggerElement: ".qualities",
-  triggerHook: "onLeave",
-  duration: "200%"
-})
-  .setPin(".qualities")
-  .addTo(controller);
 
 
 
