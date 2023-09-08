@@ -3,20 +3,6 @@
 // Add scrollmagic controller
 let controller = new ScrollMagic.Controller();
 
-
-// Scroll Pin Function
-
-TweenMax.set("#box1", { transformOrigin: "center center" });
-
-
-new ScrollMagic.Scene({
-  triggerElement: ".qualities",
-  triggerHook: "onLeave",
-  duration: "200%"
-})
-  .setPin(".qualities")
-  .addTo(controller);
-
 //------------------
 //TIMELINE 2
 //------------------
@@ -64,6 +50,34 @@ let scene2 = new ScrollMagic.Scene({
 
 .setPin('#two')
 .addTo(controller);
+
+
+AOS.init({
+  duration: 1000
+});
+
+
+// Color Change
+
+const logo = document.querySelector('#shirt_images');
+const changeColorElement = document.querySelector('.colorChange');
+console.log(logo)
+
+window.addEventListener('scroll', () => {
+const logoRect = logo.getBoundingClientRect();
+const elementRect = changeColorElement.getBoundingClientRect();
+
+if (logoRect.bottom >= elementRect.top && logoRect.top <= elementRect.bottom) {
+  console.log('aya')
+  changeColorElement.classList.add('green');
+} else {
+  console.log('gaya')
+  changeColorElement.classList.remove('green');
+}
+});
+
+
+
 
 
 

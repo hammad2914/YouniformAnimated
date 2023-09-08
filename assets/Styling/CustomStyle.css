@@ -995,3 +995,14 @@ hr {
     align-items: center;
 }
 
+.colorChange {
+    color: #000000;
+    transition: 0.3s ease;
+  }
+  
+.colorChange.green {
+    color:#75993d; /* Color when the logo reaches it */
+  }
+
+
+  
