@@ -61,17 +61,17 @@ AOS.init({
 
 const logo = document.querySelector('#shirt_images');
 const changeColorElement = document.querySelector('.colorChange');
-console.log(logo)
+// console.log(logo)
 
 window.addEventListener('scroll', () => {
 const logoRect = logo.getBoundingClientRect();
 const elementRect = changeColorElement.getBoundingClientRect();
 
 if (logoRect.bottom >= elementRect.top && logoRect.top <= elementRect.bottom) {
-  console.log('aya')
+  // console.log('aya')
   changeColorElement.classList.add('green');
 } else {
-  console.log('gaya')
+  // console.log('gaya')
   changeColorElement.classList.remove('green');
 }
 });
